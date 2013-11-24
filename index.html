@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>jQuery iNav - the best products showcasing</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Gutierrez Nicolàs Gastòn" />
+    <meta name="robots" content="all,index,follow" />
+
+    <link rel="stylesheet" href="STYLE/screen.css" media="all" />
+    <link rel="stylesheet" href="CSS/jquery.inav.css" media="all" />
+       <!-- Navigation CSS section -->
+        <link rel="stylesheet" href="STYLE/reset.css" />
+		<link rel="stylesheet" href="STYLE/styles.css" media="all"  />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css" media="all" />
+
+        <!-- end Navigation CSS section -->
+    <script type="text/javascript" src="SCRIPT/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="SCRIPT/jquery.inav.js"></script>
+    
+    
+    <script type="text/javascript">
+        $( function()
+        {
+            var $nav = $( '#my-inav' ).inav( {
+                initEffect : 'fade',
+                autoCenterMenu : true
+            } );
+        } );
+    </script>
+</head>
+<body>
+
+<section id="container" class="orange"style="display:none">
+	            <nav id="navigation">
+			        <ul>
+				        <li class="yellow">
+					        <a href="#" <title="home"> <img src="img/m1.png" alt="Menu1" /></a>
+			            </li>
+				        <li class="yellow">
+					        <a href="#" title="Blog"><img src="img/m2.png" alt="Menu2" /></a>
+				        </li>
+				        <li class="yellow">
+					        <a href="#"title="About Us"><img src="img/m3.png" alt="Menu3" /></a>
+				        </li>
+				        <li class="yellow">
+					        <a href="#" title="Portfolio"><img src="img/m4.png" alt="Menu4" /></a>
+				        </li>
+				        <li class="yellow">
+					        <a href="#"title="Contact"><img src="img/m5.png" alt="Menu5" /></a>
+				        </li>
+			        </ul>
+		        </nav>
+	</section>
+    
+    <div class="press">
+		    <a href="#" id="drop"></a>
+	</div>	
+    
+    <a href="index.html" <title="logo"> <img src="IMG/logo.png" alt="logo" /></a>
+	<!-- JS section -->
+
+	<script src="JS/jquery.js"></script>
+	<script src="JS/foundation.min.js"></script>
+	<script>
+			$(document).foundation();
+			
+			$(document).ready(function() {
+				$('#drop').click(function() {
+					$('#container').slideToggle(300,function(){
+						if ($(this).is(":hidden")) $("#drop").html("");
+						else $("#drop").html("");
+					});
+					return false;
+				});
+			});
+	</script>
+
+	<!-- end JS section -->
+
+
+    <div class="inav-showcase" id="my-inav">
+        
+        <div class="inav-arrows">
+            <a href="#" class="inav-prev-item inav-arrow"><img src="IMG/left-arrow.png" alt="" /></a>
+            <a href="#" class="inav-next-item inav-arrow"><img src="IMG/right-arrow.png" alt="" /></a>
+        </div>
+        
+        <div class="inav-menu">
+        
+        
+        <div class="inav-slides">
+            
+         
+   <p>Test Hello _1</p>
+            <ul class="current-slide">//problem with this class
+            <p>Test Hello</p>
+                <li><a href="#"><img src="IMG/E1.png" alt=""/>Episode 1</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 2</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 3</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 4</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 5</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 6</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 7</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 8</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 9</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 10</a></li>
+                <li><a href="#"><img src="IMG/E1.png" alt="" />Episode 11</a></li>
+                <li class="current-menu-item"><a href="#"><img src="IMG/E1.png" alt="" />End of menu</a></li>
+                
+                <li class="title">Work</li>
+            </ul>
+
+
+        </div><!-- /inav-slides -->
+        
+    </div><!-- /inav-showcase -->
+
+
+</body>
+</html>
